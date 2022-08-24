@@ -426,3 +426,27 @@ header {
 /***************************************************************************************/
 /*************************************Estilos Footer************************************/
 /***************************************************************************************/
+
+footer {
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: start;
+    background-color: var(--bitcoin-orange);
+}
+
+.footer__list {
+    margin-right: 15px;
+    justify-self: end;
+    list-style: none;
+}
+
+.footer__list a {
+    text-decoration: none;
+    color: white;
+}
+
+footer img {
+    margin-left: 15px;
+}
