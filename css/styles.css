@@ -61,6 +61,13 @@ header, main, footer {
 /***************************************************************************************/
 
 /**********************************Sección de Intercambios******************************/
+.slide {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x mandatory;
+}
+
 .seccion-intercambios {
     padding: 60px 16px 65px 16px;
     background-color: var(--off-white);
@@ -77,11 +84,7 @@ header, main, footer {
 
 .seccion-intercambios__article {
     padding: 0 20px;
-    display: flex;
     justify-content: space-between;
-    overflow-x: scroll;
-    overscroll-behavior-x:contain;
-    scroll-snap-type: x mandatory;
 }
 
 .article__container {
@@ -138,6 +141,8 @@ header, main, footer {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Verificar que exista un bloque general de icon*/
 .icon {
+    width: 15px;
+    height: 15px;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,8 +150,6 @@ header, main, footer {
 }
 
 .trending {
-    width: 15px;
-    height: 15px;
     top: 12px;
     right: 15px;
     background-image: url(../assets/icons/trending-down.svg);
@@ -173,8 +176,6 @@ header, main, footer {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Verificar que exista un bloque general de icon*/
 .container__arrow {
-    width: 15px;
-    height: 15px;
     right: -30px;
     top: 115px;
     background-image: url(../assets/icons/right-arrow.svg);
@@ -243,6 +244,133 @@ header, main, footer {
 
 .seccion-hero__title {
     padding-top: 64px;
+}
+
+/**************************************Sección de Planes********************************/
+.seccion-planes {
+    padding: 64px 16px;
+    background-color: var(--off-white);
+}
+
+.seccion-planes__title {
+    color: var(--warm-black);
+}
+
+.seccion-planes__text {
+    margin-top: 24px;
+    color: var(--dark-grey-1);
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Verificar que exista un bloque llamado slide*/
+.seccion-planes__slide {
+    margin: 20px 18px 0 18px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>Slide similar al que aparece en la seccion de intercambios*/
+
+.seccion-planes__tarjeta-plan {
+    min-width: 190px;
+    position: relative;
+    margin: 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30,0.16);
+    background-color: white;
+    scroll-snap-align: center;
+}
+
+.tarjeta-plan__etiqueta {
+    width: 100px;
+    position: absolute;
+    top: -15.5px;
+    right: calc(50% - 48px);
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--bitcoin-orange);
+}
+
+.etiqueta--black {
+    background-color: #000;
+}
+.etiqueta--blue {
+    background-color: var(--secondary-blue);
+}
+
+.etiqueta__text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tarjeta-plan__text {
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.tarjeta-plan__precio {
+    margin-top: 8px;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+}
+
+.precio__signo-dolar {
+    margin: 10px 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-self: end;
+}
+
+.precio__numero {
+    font-size: 5.2rem;
+    font-weight: bold;
+    justify-self: start;
+}
+
+.tarjeta-plan__texto-informativo {
+    margin: 16px;
+    color: var(--dark-grey-1);
+}
+
+.tarjeta-plan__button {
+    position: relative;
+    margin: 0 20px 24px 20px;
+    padding: 16px;
+    border: 2px solid var(--bitcoin-orange);
+    text-align: start;
+    border-radius: 4px;
+    background-color: var(--off-white);
+}
+
+.button--border-black {
+    border-color: #000;
+}
+.button--border-blue {
+    border-color: #1A9AF7;
+}
+
+.tarjeta-plan__button a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+
+.tarjeta-plan__button a span {
+    width: 25px;
+    height: 25px;
+    right: 12px;
+    top: 12px;
+}
+
+.icon--orange-right-arrow {
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+}
+.icon--black-right-arrow {
+    background-image: url(../assets/icons/black-right-arrow.svg);
+}
+.icon--blue-right-arrow {
+    background-image: url(../assets/icons/blue-right-arrow.svg);
 }
 
 /***************************************************************************************/
