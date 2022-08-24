@@ -33,9 +33,78 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+header, main, footer {
+    min-width: 320px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
 /***************************************************************************************/
 /****************************************Estilos Header*********************************/
 /***************************************************************************************/
+header {
+    position: relative;
+    height: 295px;
+    padding: 0 16px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+.header__img {
+    margin-top: 42px;
+}
+
+.header__title {
+    margin-top: 36px;
+    color: white;
+}
+
+.header__text {
+    margin-top: 24px;
+    color: var(--soft-orange);
+}
+
+.header__button {
+    width: 230px;
+    position: absolute;
+    top: 266px;
+    right: calc(50% - 115px);
+    padding: 15px 16px;
+    text-align: start;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    background-color: var(--off-white);
+}
+
+.header__button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+
+.header__button a span {
+    width: 15px;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background-image: url(../assets/icons/down-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /***************************************************************************************/
 /*********************************Estilos Contenido Principal***************************/
