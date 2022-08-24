@@ -33,6 +33,25 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+header, main, footer {
+    min-width: 320px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
 /***************************************************************************************/
 /****************************************Estilos Header*********************************/
 /***************************************************************************************/
@@ -41,6 +60,84 @@ html {
 /*********************************Estilos Contenido Principal***************************/
 /***************************************************************************************/
 
+.seccion-intercambios {
+    padding: 60px 16px 65px 16px;
+    background-color: var(--off-white);
+}
+
+.seccion-intercambios__title {
+    margin-top: 40px;
+}
+
+.seccion-intercambios__text {
+    margin: 24px 0 50px 0;
+    color: var(--dark-grey-1);
+}
+
+.seccion-intercambios__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article__container {
+    width: 203px;
+    height: auto;
+    text-align: start;
+}
+
+.container__title {
+    padding-left: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.container__title--one {
+    color: #FF9536;
+}
+.container__title--two {
+    color: var(--secondary-blue);
+}
+
+.container__table {
+    width: 100%;
+    margin-top: 12px;
+    display: grid;
+    grid-template-rows: repeat(4, 41px);
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 3px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #B5B0AC;
+}
+
+.container__table .item {
+    padding: 11px;
+    background-color: white;
+}
+
+.item-5, .item-6, .item-7, .item-8 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--dark-grey-1);
+}
+
+.container__date {
+    margin: 6px;
+    padding: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.container__date--one {
+    background-color: var(--soft-orange);
+}
+.container__date--two {
+    background-color: var(--soft-blue);
+}
 /***************************************************************************************/
 /*************************************Estilos Footer************************************/
 /***************************************************************************************/
