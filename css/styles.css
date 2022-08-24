@@ -33,6 +33,25 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+header, main, footer {
+    min-width: 320px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
 /***************************************************************************************/
 /****************************************Estilos Header*********************************/
 /***************************************************************************************/
@@ -44,3 +63,27 @@ html {
 /***************************************************************************************/
 /*************************************Estilos Footer************************************/
 /***************************************************************************************/
+
+footer {
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: start;
+    background-color: var(--bitcoin-orange);
+}
+
+.footer__list {
+    margin-right: 15px;
+    justify-self: end;
+    list-style: none;
+}
+
+.footer__list a {
+    text-decoration: none;
+    color: white;
+}
+
+footer img {
+    margin-left: 15px;
+}
