@@ -179,8 +179,56 @@ header, main, footer {
     top: 115px;
     background-image: url(../assets/icons/right-arrow.svg);
 }
-
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Repetido con el span del boton de header*/
+
+/**********************************Sección de Tarjetas**********************************/
+.seccion-tarjetas {
+    padding: 64px 16px 46px 16px;
+    background-color: var(--warm-black);
+    color: white;
+}
+
+.seccion-tarjetas .text {
+    color: var(--dark-grey);
+}
+
+.seccion-tarjetas__text {
+    margin: 24px 0 16px 0;
+}
+
+.tarjeta {
+    position: relative;
+    border-radius: 4px;
+    margin-top: 16px;
+    padding: 48px 20px 22px 16px;
+    text-align: start;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+    background-color: var(--warm-black-1);
+}
+
+.tarjeta__icon {
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 18px;
+}
+
+.icon--clock {
+    background-image: url(../assets/icons/clock.svg);
+}
+.icon--eye {
+    background-image: url(../assets/icons/eye.svg);
+}
+.icon--dollar {
+    background-image: url(../assets/icons/dollar-sign.svg);
+}
+.icon--check {
+    background-image: url(../assets/icons/check-circle.svg);
+}
+
+.tarjeta__text {
+    margin-top: 10px;
+}
 
 /***************************************************************************************/
 /*************************************Estilos Footer************************************/
