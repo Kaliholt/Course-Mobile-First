@@ -60,6 +60,7 @@ header, main, footer {
 /*********************************Estilos Contenido Principal***************************/
 /***************************************************************************************/
 
+/**********************************Sección de Intercambios******************************/
 .seccion-intercambios {
     padding: 60px 16px 65px 16px;
     background-color: var(--off-white);
@@ -75,15 +76,25 @@ header, main, footer {
 }
 
 .seccion-intercambios__article {
+    padding: 0 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x mandatory;
 }
 
 .article__container {
     width: 203px;
     height: auto;
+    position: relative;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: start;
+    scroll-snap-align: center;
+
 }
 
 .container__title {
@@ -114,6 +125,7 @@ header, main, footer {
 }
 
 .container__table .item {
+    position: relative;
     padding: 11px;
     background-color: white;
 }
@@ -124,8 +136,28 @@ header, main, footer {
     color: var(--dark-grey-1);
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Verificar que exista un bloque general de icon*/
+.icon {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.trending {
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    right: 15px;
+    background-image: url(../assets/icons/trending-down.svg);
+}
+
+.trending--up {
+    background-image: url(../assets/icons/trending-up.svg);
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Repetido con el span del boton de header*/
 .container__date {
-    margin: 6px;
+    margin: 16px 6px 0 6px;
     padding: 8px;
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
@@ -138,6 +170,18 @@ header, main, footer {
 .container__date--two {
     background-color: var(--soft-blue);
 }
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Verificar que exista un bloque general de icon*/
+.container__arrow {
+    width: 15px;
+    height: 15px;
+    right: -30px;
+    top: 115px;
+    background-image: url(../assets/icons/right-arrow.svg);
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Repetido con el span del boton de header*/
+
 /***************************************************************************************/
 /*************************************Estilos Footer************************************/
 /***************************************************************************************/
